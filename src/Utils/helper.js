@@ -58,6 +58,7 @@ export function useGame({
 
     const shuffledGame = newGame.sort(() => Math.random() - 0.5);
     setGame(shuffledGame);
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [options]);
 
   useEffect(() => {
