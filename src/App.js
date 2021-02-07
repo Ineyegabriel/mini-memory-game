@@ -1,6 +1,5 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {Switch, Route, useLocation, Redirect} from 'react-router-dom';
+import {Switch, Route, useLocation} from 'react-router-dom';
 import { useTransition, animated } from 'react-spring';
 import HomePage from './Pages/HomePage';
 import MemoryGame from './Pages/MemoryGame';

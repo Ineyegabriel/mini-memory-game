@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
  * setting the colors, shuffling the colors and displaying appropriate cards
  * @param {props} - props from the calling components
  * @param {objects} - props from components
- * @returns {objects} - exposes the functions and their value from the useState Hook 
+ * @returns {objects} - exposes the functions and their value from the useState Hook
  */
 export function useGame({
   options,
@@ -104,16 +104,14 @@ export function useGame({
     setHighScore,
   ]);
 
- 
   /**
    * This conditional statement is what ensures that two cards are flipped,
    * aimming to pair them
-   * 
+   *
    */
   if (flippedIndexes.length === 2) {
     const match =
       game[flippedIndexes[0]].colorId === game[flippedIndexes[1]].colorId;
-
     if (match) {
       const newGame = [...game];
       newGame[flippedIndexes[0]].flipped = true;
@@ -142,7 +140,7 @@ export function useGame({
 /**
  * custom Hook utilizing the browser localstorage to manage the highscores with its
  * appropriate username
- * @param {string} username 
+ * @param {string} username
  * @returns {Array} - containing the state storage and setStorage
  * @returns {object} - initiate state
  * @returns {object} - fetchStorage object from browser with the key

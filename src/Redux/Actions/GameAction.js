@@ -13,4 +13,4 @@ export const setCurrentScore = score =>({
 export const setCurrentHighScore = score => ({
     type: GameActionTypes.SET_CURRENT_HIGHSCORE,
     payload: score
-})
+});

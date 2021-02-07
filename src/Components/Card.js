@@ -28,6 +28,7 @@ function Card({
       setFlippedCount(flippedCount + 1)
       setFlippedIndexes([])
     }
+    // eslint-disable-next-line
   }, [flippedIndexes]);
 
   const onCardClick = () => {
