@@ -53,7 +53,7 @@ const ScorePage = memo(({username, score, highscore}) => {
             <span className="highscore">
               <div className="highScoreBadge">
                 <Trophy className="highscoreLogo" />
-                <span className="score">{Math.round(highscore.score)}</span>
+                <span className="score">{Math.floor(highscore.score)}</span>
               </div>
 
               <span className="playerDetails">
@@ -66,7 +66,7 @@ const ScorePage = memo(({username, score, highscore}) => {
             <span className="highscore">
               <div className="highScoreBadge">
                 <Man className="highscoreLogo" />
-                <span className="score">{Math.round(score)}</span>
+                <span className="score">{Math.floor(score)}</span>
               </div>
 
               <span className="playerDetails">
